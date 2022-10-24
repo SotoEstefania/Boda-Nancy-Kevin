@@ -1,0 +1,44 @@
+.section-quiz-novios{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+}
+.fin-quiz{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.h2-preguntas-respuestas{
+    width: 100%;
+}
+.p-pregunta-quiz{
+    text-align: center;
+}
+.opciones-quiz{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.opcion-quiz{
+    width: 75%;
+    font-size: 1.6rem;
+}
+.opcionCorrecta{
+    border: ridge 2px #32ffb795;
+}
+.opcionIncorrecta{
+    border: ridge 2px #ff326295;
+}
+.rendirse-quiz{
+    width: 40%;
+    border: ridge #2b2b2b50 1px;
+    background-color: #2b2b2b10;
+    margin: 0.4rem 0.3rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem #2b2b2b80;
+}
