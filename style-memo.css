@@ -76,7 +76,6 @@
 
 }
 .volver-memo, .nuevo-memo{
-    width: 40%;
     border: ridge #2b2b2b50 1px;
     background-color: #2b2b2b10;
     margin: 0.4rem 0.3rem;

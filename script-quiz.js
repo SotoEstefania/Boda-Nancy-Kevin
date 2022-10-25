@@ -1,15 +1,18 @@
-
 const btnVolverQuiz = clase('.volver-quiz');
 const pAciertosQuiz=clase('.aciertos-quiz');
+const btnRepetirQuiz= clase('.repetir-quiz');
 const btnNuevoQuiz=clase('.nuevo-quiz');
 const btnRendirseQuiz=clase('.rendirse-quiz');
 const pPreguntaQuiz= clase('.p-pregunta-quiz');
 const pFinQuiz= clase('.p-fin-quiz');
+var quiz1= clase('.quiz-preguntas1');
+var quiz2= clase('.quiz-preguntas2');
 
 
 btnInicialJuegoQuiz.onclick= iniciarQuiz;
 btnRendirseQuiz.onclick=rendirseQuiz;
-btnNuevoQuiz.onclick=iniciarQuiz;
+btnRepetirQuiz.onclick=iniciarQuiz;
+// btnNuevoQuiz.onclick=iniciarQuiz2;
 btnVolverQuiz.onclick=volverQuiz;
 
 let listaPreguntas = 
@@ -80,9 +83,11 @@ let respuestasCorrectas = 0;
 function iniciarQuiz(){
     sectionInicial.style.display='none'; 
     sectionJuegoQuiz.style.display='flex';
+    quiz1.style.display='flex';
     sectionFinQuiz.style.display='none';
     posicionActual = 0;
     respuestasCorrectas = 0;
+    preguntasRespondidas = 0;
     cargarPregunta();
 }
 
@@ -129,7 +134,7 @@ function terminarJuego(){
         pFinQuiz.innerHTML=`Genial! Respondiste ${respuestasCorrectas} preguntas correctamente. <br> Sumás ${Math.floor(respuestasCorrectas/2)} puntos 💪🏽`
         puntaje+=(Math.floor(respuestasCorrectas/2));
     }else{
-        pFinQuiz.innerHTML=`Sólo respondiste ${respuestasCorrectas} preguntas correctamente. <br> Ésta vez no sumás puntos. Intentalo de nuevo!`
+        pFinQuiz.innerHTML=`Sólo respondiste ${respuestasCorrectas} preguntas correctamente 👎🏼 <br> Ésta vez no sumás puntos. Intentalo de nuevo!`
     }
 
 }
