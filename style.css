@@ -42,6 +42,7 @@ main{
     height: 90vh;
     margin: auto;
     align-self: center;
+    font-size: 1.5rem;
 
 }
 .pantalla-inicial{
@@ -50,7 +51,7 @@ main{
     justify-content: space-between;
     height: 100%;
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 h1{
     font-family: 'Bad Script', 'cursive';
@@ -112,18 +113,67 @@ h3{
     font-weight: bold;
 }
 .puntaje-aclaracion{
-    font-size: 1.5rem;
     font-style:italic;
 }
 
-footer{
-    position:fixed;
-    left:0px;
-    bottom:0px;
+.section-sobre{
     width:100%;
-    height: 3rem;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
+    height: 100%;
+    font-size: 1.4rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    font-size: 1.5rem;
+}
+.section-sobre p{
+    margin: 2.5rem 1rem;
+    line-height: 2.5rem;
+}
+.presentacion-form{
+    width:100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+form{
+    font-family:'Raleway',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    font-style: italic;
+}
+input, textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    outline: none;
+    border: ridge #2b2b2b28 2px;
+    border-radius: 0.8rem;
+    background-color: transparent;
+    height: 5rem;
+    width: 100%;
+    margin: 0.6rem 0px;
+    box-shadow: 0.05rem 0.05rem 0.3rem #2b2b2b80;
+    resize: none;
+    padding: 0.5rem 1rem;
+}
+textarea{
+    height: 15rem;
+    padding: 1rem;
+}
+.enviar-form{
+    font-family:'Raleway',sans-serif;
+    width: 100%;
+    border: ridge #2b2b2b28 2px;;
+    height: 5rem;
+    margin: 0.6rem 0px;
+    box-shadow: 0.05rem 0.05rem 0.3rem #2b2b2b80;
+    outline: none;
+    border: ridge #2b2b2b28 2px;
+    border-radius: 0.8rem;
+    background-color: #2b2b2b15;
 }

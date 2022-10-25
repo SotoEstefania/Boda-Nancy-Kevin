@@ -185,7 +185,7 @@ function comprobarRespuesta2(opcElegida){
         preguntasRespondidas++;
     }else{
         document.getElementById(`opc${opcElegida}-2`).className = "opcion-quiz btn opcionIncorrecta";
-        document.getElementById(`opc${correctaQuiz[posicionActual]}-2`).className = "opcion-quiz btn opcionCorrecta";
+        document.getElementById(`opc${correctaQuiz2[posicionActual]}-2`).className = "opcion-quiz btn opcionCorrecta";
         preguntasRespondidas++;
     }
     posicionActual++;
@@ -202,7 +202,7 @@ function terminarJuego(){
         pFinQuiz.innerHTML=`Genial! Respondiste ${respuestasCorrectas} preguntas correctamente. <br> Sumás ${Math.floor(respuestasCorrectas/2)} puntos 💪🏽`
         puntaje+=(Math.floor(respuestasCorrectas/2));
     }else{
-        pFinQuiz.innerHTML=`Sólo respondiste ${respuestasCorrectas} preguntas correctamente 👎🏼 <br> Ésta vez no sumás puntos. Intentalo de nuevo!`
+        pFinQuiz.innerHTML=`Sólo respondiste ${respuestasCorrectas} preguntas correctamente 👎🏼 <br> Ésta vez no sumás puntos. Intentalo de nuevo! <br> Te recomiendo preguntar a otros invitados, seguro alguno sabe...`
     }
 
 }

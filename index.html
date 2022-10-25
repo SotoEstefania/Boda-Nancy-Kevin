@@ -35,6 +35,28 @@
         </div>
         <p class="puntaje-total">Puntaje total: 0</p>
         <p class="puntaje-aclaracion">Cuidado! Si recargás la pagina, perdés tu puntaje.</p>
+        <br><br>
+        <p class="sobre-estos-juegos"><u>Sobre estos juegos</u> </p>
+      </section>
+      <section class="section-sobre">
+        <div class="presentacion-form">
+          <p>Hola! Soy Estefi, la hermana de Rodri. 
+            Estoy estudiando programación web y decidí sorprender a la feliz pareja con un toque tecnológico para su fiesta. <br>
+            Espero se diviertan un rato con éstos juegos que tardé más de un mes en preparar 😵 <br>
+            Si te gustó (o no) la idea, o si encontraste errores, y querés dejarme un comentario, escribime 👇🏼 <br> 
+            (El formulario te redireccionará a una página de comprobación y luego de vuelta acá.)
+          </p>
+          <form action="https://formsubmit.co/sotoestefania482@gmail.com" method="POST">
+            <label for="nombre" >Nombre</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" required></textarea>
+            <button type="submit" class="enviar-form">Enviar</button>
+          </form>
+        </div>
+        <button class="volver-sobre btn">Volver al inicio</button>
       </section>
 
       <!-- Juego ahorcado -->
@@ -54,7 +76,7 @@
         <span class="span-pista"></span>
         <div class="div-pista-botones">
           <div class="botones-juego">
-            <button class="btn nuevo-juego btn2">Nuevo juego</button>
+            <button class="btn nuevo-juego btn2">Nueva palabra</button>
             <button  class="btn btn-pista btn2">Dame una pista!</button>
             <button class= "btn desistir btn2">Rendirse</button>
           </div>
@@ -95,7 +117,7 @@
       <!-- Juego memoria -->
       <section class="section-juego-memoria">
         <div class="h2juegos">
-          <h2>Encuentra a las parejas!</h2>
+          <h2>Encuentra las parejas!</h2>
         </div>
         <div class="secciones-memoria">
           <div class="section1-memoria">
@@ -169,16 +191,13 @@
         <button class="btn btn2 rendirse-quiz">Salir del quiz</button>
       </section>
       <section class="fin-quiz">
-        <p class="p-fin-quiz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis soluta ullam ex asperiores doloribus magnam. Dolorem voluptatum officiis ipsam, mollitia minus nemo architecto esse praesentium dolorum sapiente quod quidem nobis.</p>
+        <p class="p-fin-quiz"></p>
         <div class="botones-fin-quiz">
           <button class="btn btn2 nuevo-quiz">Elegir quiz</button>
         <button class="btn btn2 volver-quiz">Volver al inicio</button>
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
-      <a href="">Sobre estos juegos</a> 
-    </footer> -->
 
     <script src="script.js"></script>
     <script src="script-ahorcado.js"></script>
