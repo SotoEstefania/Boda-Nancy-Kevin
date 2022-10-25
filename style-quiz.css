@@ -10,12 +10,20 @@
 .h2-preguntas-respuestas{
     width: 100%;
 }
+.seleccion-quizes{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
 .quiz-preguntas1, .quiz-preguntas2{
     display: none;
     flex-direction: column;
 }
 
-.p-pregunta-quiz{
+.p-pregunta-quiz, .p-pregunta-quiz-2{
     text-align: center;
     height: 6rem;
     display: flex;
@@ -58,12 +66,13 @@
     
 }
 .p-fin-quiz{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-style: italic;
     text-align: center;
     display: block;
     width: 100%;
     margin: 1rem;
+    line-height: 2.5rem;
 }
 .botones-fin-quiz{
     width: 100%;
@@ -71,6 +80,7 @@
     justify-content: center;
     align-items: center;
 }
-.nuevo-quiz, .volver-quiz{
-    margin: 1rem 1rem;
+.volver-quiz, .nuevo-quiz{
+    width: 40%;
+    margin: 1rem;
 }

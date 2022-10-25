@@ -1,18 +1,24 @@
 const btnVolverQuiz = clase('.volver-quiz');
 const pAciertosQuiz=clase('.aciertos-quiz');
-const btnRepetirQuiz= clase('.repetir-quiz');
 const btnNuevoQuiz=clase('.nuevo-quiz');
 const btnRendirseQuiz=clase('.rendirse-quiz');
 const pPreguntaQuiz= clase('.p-pregunta-quiz');
+const pPreguntaQuiz2= clase('.p-pregunta-quiz-2');
 const pFinQuiz= clase('.p-fin-quiz');
+const seleccionQuizes= clase('.seleccion-quizes');
+const btnSeleccionQuiz1= clase('.seleccion-quiz-1');
+const btnSeleccionQuiz2= clase('.seleccion-quiz-2');
+
 var quiz1= clase('.quiz-preguntas1');
 var quiz2= clase('.quiz-preguntas2');
 
 
-btnInicialJuegoQuiz.onclick= iniciarQuiz;
+
+btnInicialJuegoQuiz.onclick= elegirQuiz;
+btnSeleccionQuiz1.onclick=iniciarQuiz;
+btnSeleccionQuiz2.onclick=iniciarQuiz2;
 btnRendirseQuiz.onclick=rendirseQuiz;
-btnRepetirQuiz.onclick=iniciarQuiz;
-// btnNuevoQuiz.onclick=iniciarQuiz2;
+btnNuevoQuiz.onclick=elegirQuiz;
 btnVolverQuiz.onclick=volverQuiz;
 
 let listaPreguntas = 
@@ -43,48 +49,27 @@ opcionesQuiz.push(['Florianópolis, Brasil','Santiago, Chile','Misiones, Argenti
 opcionesQuiz.push(['Esquel, San Juan y Córdoba','Río Negro y Formosa','Buenos Aires, Mendoza y Neuquén','Chile, Santa Cruz y Jujuy']);
 
 
-
-let listaPreguntas2 = 
-['Dónde prefiere vacaionar Paula?',
-'Qué auto tienen?',
-'Quiénes son María y Ángel?',
-'Dónde creció Rodri?',
-'Cuál es la bebida alcohólica favorita de Paula?',
-'Una difícil: Qué ascendencia tiene la familia materna de Rodri? 👀',
-'Dónde trabaja Ro?',
-'Qué le encanta preparar a Rodri?',
-'Pregunta?',
-'Pregunta?'];
-
-opcionesQuiz.push(['En las playas más solitarias','En una ciudad donde haya mucho para hacer','En un lugar muy natural, como la cordillera','En lugares donde haya mucha nieve']);
-opcionesQuiz.push(['Un Citroen c3 morado','Un Peugeot 206 gris','Un Volkswagen Golf rojo','Un Ford Focus blanco']);
-opcionesQuiz.push(['Los tíos de Paula','Los padres de Rodri','Los hermanos de Paula','Los primos de Rodri']);
-opcionesQuiz.push(['En Buenos Aires','En Santa Cruz','En Madryn','En Córdoba']);
-opcionesQuiz.push(['El Campari','El Fernet Branca','El Gancia','El vino blanco dulce']);
-opcionesQuiz.push(['Portuguesa','Española','Italiana','Mexicana']);
-opcionesQuiz.push(['En una firma de abogados','En una tienda de electrónica','En una fábrica de bebidas','En una agencia de transportes']);
-opcionesQuiz.push(['Caipirinha','Margaritas','Daiquiris','Piña colada']);
-opcionesQuiz.push(['Respuesta','RespuestaC','Respuesta','Respuesta']);
-opcionesQuiz.push(['Respuesta','Respuesta','Respuesta','RespuestaC']);
-
-let correctaQuiz2 = [2,0,1,3,0,2,2,0,1,3];
-
-let opcionesQuiz2 = [];
-
-
-
-
-
 let posicionActual = 0;
 let preguntasRespondidas= 0;
 let respuestasCorrectas = 0;
 
 
+function elegirQuiz(){
+    sectionInicial.style.display='none';
+    sectionJuegoQuiz.style.display='flex';
+    seleccionQuizes.style.display='flex';
+    quiz1.style.display='none';
+    quiz2.style.display='none';
+    sectionFinQuiz.style.display='none';
+}
+
 function iniciarQuiz(){
     sectionInicial.style.display='none'; 
     sectionJuegoQuiz.style.display='flex';
     quiz1.style.display='flex';
+    quiz2.style.display='none';
     sectionFinQuiz.style.display='none';
+    seleccionQuizes.style.display='none';
     posicionActual = 0;
     respuestasCorrectas = 0;
     preguntasRespondidas = 0;
@@ -127,6 +112,89 @@ function comprobarRespuesta(opcElegida){
 
     setTimeout(cargarPregunta,1200);
 }
+
+// QUIZ 
+let listaPreguntas2 = 
+['Dónde prefiere vacaionar Paula?',
+'Qué auto tienen?',
+'Quiénes son María y Ángel?',
+'Dónde creció Rodri?',
+'Cuál es la bebida alcohólica favorita de Paula?',
+'Una difícil: Qué ascendencia tiene la familia materna de Rodri? 👀',
+'Dónde trabaja Ro?',
+'Qué le encanta preparar a Rodri?',
+'Pregunta?',
+'Pregunta?'];
+
+let opcionesQuiz2 = [];
+
+opcionesQuiz2.push(['En las playas más solitarias','En una ciudad con mucho para hacer','En la naturaleza, como la cordillera','Donde haya mucha nieve']);
+opcionesQuiz2.push(['Un Citroen c3 morado','Un Peugeot 206 gris','Un Volkswagen Golf rojo','Un Ford Focus blanco']);
+opcionesQuiz2.push(['Los tíos de Paula','Los padres de Rodri','Los hermanos de Paula','Los primos de Rodri']);
+opcionesQuiz2.push(['En Buenos Aires','En Santa Cruz','En Madryn','En Córdoba']);
+opcionesQuiz2.push(['El Campari','El Fernet Branca','El Gancia','El vino blanco dulce']);
+opcionesQuiz2.push(['Portuguesa','Española','Italiana','Mexicana']);
+opcionesQuiz2.push(['En una firma de abogados','En una tienda de electrónica','En una fábrica de bebidas','En una agencia de transportes']);
+opcionesQuiz2.push(['Caipirinha','Margaritas','Daiquiris','Piña colada']);
+opcionesQuiz2.push(['Respuesta','RespuestaC','Respuesta','Respuesta']);
+opcionesQuiz2.push(['Respuesta','Respuesta','Respuesta','RespuestaC']);
+
+let correctaQuiz2 = [2,0,1,3,0,2,2,0,1,3];
+
+
+
+function iniciarQuiz2(){
+    sectionInicial.style.display='none'; 
+    sectionJuegoQuiz.style.display='flex';
+    quiz1.style.display='none';
+    quiz2.style.display='flex';
+    sectionFinQuiz.style.display='none';
+    seleccionQuizes.style.display='none';
+    posicionActual = 0;
+    respuestasCorrectas = 0;
+    preguntasRespondidas = 0;
+    cargarPregunta2();
+}
+
+function cargarPregunta2(){
+
+    if(listaPreguntas2.length <= posicionActual){
+        terminarJuego();
+    }
+    else{
+        limpiaropcionesQuiz2();
+        pPreguntaQuiz2.innerHTML=`${listaPreguntas2[posicionActual]}`;
+        document.getElementById("opc0-2").innerHTML = opcionesQuiz2[posicionActual][0];
+        document.getElementById("opc1-2").innerHTML = opcionesQuiz2[posicionActual][1];
+        document.getElementById("opc2-2").innerHTML = opcionesQuiz2[posicionActual][2];
+        document.getElementById("opc3-2").innerHTML = opcionesQuiz2[posicionActual][3];
+    }
+}
+
+function limpiaropcionesQuiz2(){
+    document.getElementById("opc0-2").className = "opcion-quiz btn";
+    document.getElementById("opc1-2").className = "opcion-quiz btn";
+    document.getElementById("opc2-2").className = "opcion-quiz btn";
+    document.getElementById("opc3-2").className = "opcion-quiz btn";
+}
+
+function comprobarRespuesta2(opcElegida){
+    if(opcElegida==correctaQuiz2[posicionActual]){
+        document.getElementById(`opc${opcElegida}-2`).className = "opcion-quiz btn opcionCorrecta";
+        respuestasCorrectas++;
+        preguntasRespondidas++;
+    }else{
+        document.getElementById(`opc${opcElegida}-2`).className = "opcion-quiz btn opcionIncorrecta";
+        document.getElementById(`opc${correctaQuiz[posicionActual]}-2`).className = "opcion-quiz btn opcionCorrecta";
+        preguntasRespondidas++;
+    }
+    posicionActual++;
+
+    setTimeout(cargarPregunta2,1200);
+}
+
+
+
 function terminarJuego(){
     sectionFinQuiz.style.display='flex';
     sectionJuegoQuiz.style.display='none';
@@ -143,6 +211,9 @@ function rendirseQuiz(){
     sectionInicial.style.display='flex';
     sectionMemo.style.display='none';
     sectionJuegoQuiz.style.display='none';
+    seleccionQuizes.style.display='none';
+    quiz1.style.display='none';
+    quiz2.style.display='none';
 }
 
 function volverQuiz(){

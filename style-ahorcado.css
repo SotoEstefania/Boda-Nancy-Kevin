@@ -43,13 +43,7 @@
     display: flex;
     justify-content: space-between;
 }
-.btn2{
-    width: 30%;
-    border: ridge #2b2b2b50 1px;
-    background-color: #2b2b2b10;
-    margin: 0.4rem 0.3rem;
-    box-shadow: 0.1rem 0.1rem 0.5rem #2b2b2b80;
-}
+
 .btn2:active{
     border: none #2b2b2b80 2px;
 }
