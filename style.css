@@ -56,7 +56,7 @@ main{
 h1{
     font-family: 'Bad Script', 'cursive';
     font-size: 5.8vw;
-    margin:2rem 0rem;
+    margin:1rem 0rem;
 }
 .seleccion-juegos{
     display: flex;
@@ -65,7 +65,7 @@ h1{
 }
 h3{
     font-size: 4vw;
-    margin: 1rem 0px;
+    margin-bottom: 1rem;
 }
 .btn{
     font-family:'Raleway',sans-serif;
@@ -114,8 +114,12 @@ h3{
 }
 .puntaje-aclaracion{
     font-style:italic;
+    margin: 1rem 0;
 }
-
+.sobre-estos-juegos{
+    margin-top: 1rem;
+    cursor: pointer;
+}
 .section-sobre{
     width:100%;
     height: 100%;
@@ -129,6 +133,7 @@ h3{
 .section-sobre p{
     margin: 2.5rem 1rem;
     line-height: 2.5rem;
+
 }
 .presentacion-form{
     width:100%;

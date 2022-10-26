@@ -65,7 +65,7 @@ function iniciarAhorcado(){
     spanPista.style.visibility='hidden';
     // Crear un guion por cada letra de la palabra
     for(let i = 0; i < palabra.length; i++){
-        const espacioLetra = document.createElement('span');
+        const espacioLetra = document.createElement('p');
         guion=document.createTextNode('_');
         espacioLetra.appendChild(guion);
         parrafoPalabra.appendChild(espacioLetra);
@@ -89,7 +89,7 @@ function letrasUsadas(event){
     let acerto=false;
     for (i=0; i< palabra.length; i++){
         if (letra==palabra[i]){
-            const guiones = document.querySelectorAll('#palabra-a-adivinar span');
+            const guiones = document.querySelectorAll('#palabra-a-adivinar p');
             guiones[i].innerHTML=letra;
             conteoAciertos++;
             acerto=true;

@@ -17,26 +17,32 @@
     <link rel="stylesheet" href="style-ahorcado.css" />
     <link rel="stylesheet" href="style-memo.css">
     <link rel="stylesheet" href="style-quiz.css">
+    <link rel="stylesheet" href="queries.css " />
   </head>
   <body>
     <!-- Pantalla inicial  -->
     <main>
       <section class="pantalla-inicial">
-        <div class="seleccion-juegos">
-          <h1>Bienvenidos a la boda de Paula y Rodri!</h1>
-          <h3>Cuál juego te gustaría jugar?</h3>
-          <button class="btn btn-juego-ahorcado">Juego del ahorcado</button>
-          <button class="btn btn-juego-correr">Corre hacia el altar!</button>
-          <button class="btn btn-juego-memoria">Juego de memoria</button>
-          <button class="btn btn-juego-quiz">Cuánto conocés a los novios?</button>
+        <h1>Bienvenidos a la boda de Paula y Rodri!</h1>
+        <div class="seleccion-pareja">
+          <div class="seleccion-juegos">
+            <h3>Cuál juego te gustaría jugar?</h3>
+            <button class="btn btn-juego-ahorcado">Juego del ahorcado</button>
+            <button class="btn btn-juego-correr">Corre hacia el altar!</button>
+            <button class="btn btn-juego-memoria">Juego de memoria</button>
+            <button class="btn btn-juego-quiz">Cuánto conocés a los novios?</button>
+          </div>
+          <div class="div-pareja">
+            <img src="img/pareja2.png" alt="Imagen de una pareja" class="pareja"/>
+          </div>
         </div>
-        <div class="div-pareja">
-          <img src="img/pareja2.png" alt="Imagen de una pareja" class="pareja"/>
-        </div>
-        <p class="puntaje-total">Puntaje total: 0</p>
+        <div class="puntajes">
+          <p class="puntaje-total">Puntaje total: 0</p>
         <p class="puntaje-aclaracion">Cuidado! Si recargás la pagina, perdés tu puntaje.</p>
-        <br><br>
-        <p class="sobre-estos-juegos"><u>Sobre estos juegos</u> </p>
+        </div>
+        <span class="sobre-estos-juegos"><u>Sobre estos juegos</u> </span>
+
+        
       </section>
       <section class="section-sobre">
         <div class="presentacion-form">
