@@ -31,7 +31,7 @@ function contarTiempo(){
             pTiempo.innerHTML=`Te quedaste sin tiempo! 😢`;
             btnNuevoMemo.style.visibility='visible';
         }
-    },1000);
+    },800);
 }
 function bloquearTarjetas(){
     for(let i=0;i<=19;i++){
