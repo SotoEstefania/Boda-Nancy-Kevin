@@ -1,7 +1,4 @@
 @media screen and (orientation:landscape){
-    body{
-        height: 90vh;
-    }
     main{
         height: 100%;
         width: 80vw;
@@ -23,7 +20,7 @@
     .seleccion-juegos{
         width: 50%;
     }
-    .seleccion-juegos .btn{
+    .btn{
         height: 4rem;
     }
     .div-pareja{
@@ -52,7 +49,7 @@
     }
     .div-imagen-ahorcado{
         width: 40%;
-        height: 40vh;
+        height: 30vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,9 +60,7 @@
         justify-content: center;
         align-items: center;
     }
-    .botones-juego .btn{
-        height: 4rem;
-    }
+
     #btn-letra{
         height: 4rem;
         width: 4rem;       
@@ -107,18 +102,26 @@
     }
     .nuevo-memo, .volver-memo{
         width: 100%;
+        height: 4rem;
     }
     .estadisticas{
         height: 5rem;
     }
 
 
+    .secciones-quiz p{
+        margin: 0;
+    }
+
     .section-quiz-novios .btn, .fin-quiz .btn{
         width: 40%;
     }
 
+
+
+
     .section-sobre{
-        height: 98%;
+        height: 95%;
     }
     .presentacion-form{
         flex-direction: row;
@@ -130,8 +133,35 @@
     }
     form{
         width: 60%;
-
     }
+    form .btn{
+        height: 4rem;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .label-input{
+        width: 48%;
+    }
+
+    input, textarea{
+        height: 4rem;
+        width: 100%;
+    
+    }
+    textarea{
+        height: 8rem;
+        padding: 1rem;
+    }
+
+    .volver-sobre{
+        width: 40%;
+        height: 4rem;
+    }
+
     
 
 }

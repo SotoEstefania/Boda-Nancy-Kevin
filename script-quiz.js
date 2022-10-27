@@ -115,7 +115,7 @@ function comprobarRespuesta(opcElegida){
 
 // QUIZ 
 let listaPreguntas2 = 
-['Dónde prefiere vacaionar Paula?',
+['Dónde prefiere vacacionar Paula?',
 'Qué auto tienen?',
 'Quiénes son María y Ángel?',
 'Dónde creció Rodri?',

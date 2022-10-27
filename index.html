@@ -28,7 +28,6 @@
           <div class="seleccion-juegos">
             <h3>Cuál juego te gustaría jugar?</h3>
             <button class="btn btn-juego-ahorcado">Juego del ahorcado</button>
-            <button class="btn btn-juego-correr">Corre hacia el altar!</button>
             <button class="btn btn-juego-memoria">Juego de memoria</button>
             <button class="btn btn-juego-quiz">Cuánto conocés a los novios?</button>
           </div>
@@ -48,15 +47,21 @@
         <div class="presentacion-form">
           <p>Hola! Soy Estefi, la hermana de Rodri. 
             Estoy estudiando programación web y decidí sorprender a la feliz pareja con un toque tecnológico para su fiesta. <br>
-            Espero se diviertan un rato con éstos juegos que tardé más de un mes en preparar 😵 <br>
+            Espero se diviertan un rato con éstos juegos que tardé más de un mes en preparar 😵 Las imágenes pueden demorar un poquito en cargar la primera vez pero después ya quedan pre-cargadas y no deberían tardar.<br>
             Si te gustó (o no) la idea, o si encontraste errores, y querés dejarme un comentario, escribime 👇🏼 <br> 
             (El formulario te redireccionará a una página de comprobación y luego de vuelta acá.)
           </p>
           <form action="https://formsubmit.co/sotoestefania482@gmail.com" method="POST">
-            <label for="nombre" >Nombre</label>
-            <input type="text" name="nombre" id="nombre" required>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <div class="inputs">
+              <div class="label-input"><label for="nombre" >Nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="label-input">
+                <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+              </div>
+            </div>
+            
             <label for="comentarios">Comentarios</label>
             <textarea name="comentarios" id="comentarios" required></textarea>
             <button type="submit" class="enviar-form">Enviar</button>
