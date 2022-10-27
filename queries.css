@@ -137,11 +137,13 @@
         display: flex;
         justify-self: center;
         text-align: center;
+        font-size: 1.4rem;
     }
     form{
         width: 60%;
+        font-size: 1.4rem;
     }
-    form .btn{
+    .enviar-form{
         height: 4rem;
     }
     .inputs{
