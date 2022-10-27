@@ -148,7 +148,7 @@
         margin-top: 0.5rem;
     }
     .enviar-form{
-        height: 4rem;
+        height: 3.5rem;
     }
     .inputs{
         display: flex;
@@ -161,12 +161,12 @@
     }
 
     input, textarea{
-        height: 4rem;
+        height: 3.5rem;
         width: 100%;
     
     }
     textarea{
-        height: 8rem;
+        height: 5rem;
         padding: 1rem;
     }
 
