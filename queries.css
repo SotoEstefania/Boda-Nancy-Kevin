@@ -74,7 +74,7 @@
         height: 100%;
         align-items: center;
     }
-    .section-juego-memoria h2{
+    .section-juego-memoria h2, .section-quiz-novios h2{
         margin-bottom: 0;
     }
 
@@ -117,7 +117,7 @@
     }
     .secciones-quiz p{
         margin: 0;
-        height: 4rem;
+        height: 2.5rem;
     }
 
     .section-quiz-novios .btn, .fin-quiz .btn{
@@ -132,6 +132,7 @@
     }
     .presentacion-form{
         flex-direction: row;
+        margin: 1.5rem 0;
     }
     .presentacion-form p{
         display: flex;
