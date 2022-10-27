@@ -109,7 +109,7 @@ function letrasUsadas(event){
         intentosText.textContent=('Fin del juego! La palabra era:');
         gameOver();
     }else if(conteoAciertos==palabra.length){
-        intentosText.textContent=('Felicitaciones, ganaste!');
+        intentosText.textContent=('Felicitaciones, ganaste un punto!');
         imagenAhorcado.src='img/ahorcadoFin.svg';
         gameOver();
         puntaje++;
