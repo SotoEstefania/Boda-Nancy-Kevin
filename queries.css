@@ -1,4 +1,7 @@
 @media screen and (orientation:landscape){
+    body{
+        height: 85vh;
+    }
     main{
         height: 100%;
         width: 80vw;
@@ -71,6 +74,9 @@
         height: 100%;
         align-items: center;
     }
+    .section-juego-memoria h2{
+        margin-bottom: 0;
+    }
 
     .secciones-memoria{
         flex-direction: row;
@@ -82,10 +88,8 @@
     }
     .tabla-memoria{
         width: 90%; 
-        height: 70vh;
     }
     .div-btn-memo{
-        height: 17vh;
         max-height: 12rem;
     }
     .btn-memo{
@@ -108,9 +112,12 @@
         height: 5rem;
     }
 
-
+    .section-quiz-novios{
+        height: 90%;
+    }
     .secciones-quiz p{
         margin: 0;
+        height: 4rem;
     }
 
     .section-quiz-novios .btn, .fin-quiz .btn{
