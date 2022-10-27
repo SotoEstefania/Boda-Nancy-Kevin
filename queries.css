@@ -1,28 +1,30 @@
 @media screen and (orientation:landscape){
     body{
-        background: url(img/Fondo-lg.png) center center no-repeat fixed;
-        background-size: cover;
         height: 90vh;
     }
     main{
         height: 100%;
         width: 80vw;
+        justify-content: space-between;
     }
     h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
         display: block;
     }
     .pantalla-inicial{
         display: flex;
     }
     h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .seleccion-pareja{
         display: flex;
     }
     .seleccion-juegos{
         width: 50%;
+    }
+    .seleccion-juegos .btn{
+        height: 4rem;
     }
     .div-pareja{
         width: 50%;
@@ -40,6 +42,30 @@
     .section-juego-ahorcado{
         height: 90%;
     }
+
+    .ahorcado-img-palabra{
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-imagen-ahorcado{
+        width: 40%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-palabra{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .botones-juego .btn{
+        height: 4rem;
+    }
     #btn-letra{
         height: 4rem;
         width: 4rem;       
@@ -48,7 +74,6 @@
 
     .section-juego-memoria{
         height: 100%;
-        width: 80%;
         align-items: center;
     }
 
@@ -61,7 +86,7 @@
         width: 100%; 
     }
     .tabla-memoria{
-        width: 100%; 
+        width: 90%; 
         height: 70vh;
     }
     .div-btn-memo{
@@ -89,7 +114,7 @@
 
 
     .section-quiz-novios .btn, .fin-quiz .btn{
-        width: 30%;
+        width: 40%;
     }
 
     .section-sobre{

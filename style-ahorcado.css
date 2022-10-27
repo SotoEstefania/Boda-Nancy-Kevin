@@ -8,8 +8,13 @@
     margin: auto auto;
 }
 
+.ahorcado-img-palabra{
+    justify-content: center;
+    width: 100%;
+}
 .div-imagen-ahorcado{
     height: 28vh;
+    display: flex;
     justify-content: center;
 }
 .imagen-ahorcado{
@@ -21,7 +26,7 @@
 #palabra-a-adivinar{
     font-size: 2.5rem;
     font-weight: 800;
-    margin-top: 2.5rem;    
+    margin: 2rem 0;    
     display:inline-block;
     justify-content: center;
     text-align: center;

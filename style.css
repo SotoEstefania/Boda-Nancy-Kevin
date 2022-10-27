@@ -33,7 +33,7 @@ a:active{
     color:#8e8e8e;
 }
 body{
-    background: url(img/Background.jpg) center center no-repeat fixed;
+    background: linear-gradient(138deg, rgba(254,186,186,0.6) 34%, rgba(45,252,253,0.6) 100%) center center no-repeat fixed;
     background-size: cover;
     height: 90vh;
 }
@@ -105,7 +105,7 @@ h3{
 }
 .pareja{
     width: 90%;
-    max-width:30rem ;
+    max-width:25rem ;
     justify-self: end;
 }
 .puntaje-total{
