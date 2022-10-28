@@ -111,6 +111,7 @@ h3{
 .puntaje-total{
     font-size: 1.8rem;
     font-weight: bold;
+    margin: 1rem 0;
 }
 .puntaje-aclaracion{
     font-style:italic;

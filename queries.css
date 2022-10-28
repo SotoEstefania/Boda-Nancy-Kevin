@@ -8,7 +8,7 @@
         justify-content: space-between;
     }
     h1{
-        font-size: 3.5rem;
+        font-size: 3rem;
         display: block;
     }
     .pantalla-inicial{
@@ -19,6 +19,7 @@
     }
     .seleccion-pareja{
         display: flex;
+        justify-content: center;
     }
     .seleccion-juegos{
         width: 50%;
@@ -27,7 +28,7 @@
         height: 4rem;
     }
     .div-pareja{
-        width: 50%;
+        width: 30%;
     }
     .pareja{
         max-height:20rem ;
@@ -101,7 +102,6 @@
         height: 15vh;
         max-width: 11rem;
         max-height: 11rem;
-
     }
     .section2-memoria{
         justify-content: center;
