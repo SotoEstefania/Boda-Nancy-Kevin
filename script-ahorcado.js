@@ -1,3 +1,22 @@
+// // Abecedario
+// const espacioAbecedario=document.querySelector('.letras-abecedario');
+// const abc=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+// function generarAbecedario(){
+//     for(let i=0;i<abc.length;i++){
+//         btnLetraG = document.createElement('button');
+//         letraG=document.createTextNode(abc[i]);
+//         btnLetraG.appendChild(letraG);
+//         espacioAbecedario.appendChild(btnLetraG);
+//         btnLetraG.setAttribute("id", "btn-letra");
+//     }
+// }
+
+
+
+
+
+
 
 
 // Palabra a averiguar

@@ -122,9 +122,9 @@ let listaPreguntas2 =
 'Cuál es la bebida alcohólica favorita de Paula?',
 'Una difícil: Qué ascendencia tiene la familia materna de Rodri? 👀',
 'Dónde trabaja Ro?',
-'Qué le encanta preparar a Rodri?',
-'Pregunta?',
-'Pregunta?'];
+'A qué taller de manualidades iba Paula?',
+'Quién es Ragnar?',
+'Qué le encanta preparar a Rodri?'];
 
 let opcionesQuiz2 = [];
 
@@ -135,11 +135,11 @@ opcionesQuiz2.push(['En Buenos Aires','En Santa Cruz','En Madryn','En Córdoba']
 opcionesQuiz2.push(['El Campari','El Fernet Branca','El Gancia','El vino blanco dulce']);
 opcionesQuiz2.push(['Portuguesa','Española','Italiana','Mexicana']);
 opcionesQuiz2.push(['En una firma de abogados','En una tienda de electrónica','En una fábrica de bebidas','En una agencia de transportes']);
+opcionesQuiz2.push(['Collages','Cerámica','Pintura sobre madera','Carpintería']);
+opcionesQuiz2.push(['Un perro','Un vecino','Un conejo','Una oveja']);
 opcionesQuiz2.push(['Caipirinha','Margaritas','Daiquiris','Piña colada']);
-opcionesQuiz2.push(['Respuesta','RespuestaC','Respuesta','Respuesta']);
-opcionesQuiz2.push(['Respuesta','Respuesta','Respuesta','RespuestaC']);
 
-let correctaQuiz2 = [2,0,1,3,0,2,2,0,1,3];
+let correctaQuiz2 = [2,0,1,3,0,2,2,1,3,0];
 
 
 

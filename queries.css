@@ -29,6 +29,9 @@
     .div-pareja{
         width: 50%;
     }
+    .pareja{
+        max-height:20rem ;
+    }
     .sobre-estos-juegos{
         margin-bottom: 3rem;
         width: fit-content;
