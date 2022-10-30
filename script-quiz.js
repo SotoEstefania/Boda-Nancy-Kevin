@@ -129,7 +129,7 @@ let listaPreguntas2 =
 let opcionesQuiz2 = [];
 
 opcionesQuiz2.push(['En las playas más solitarias','En una ciudad con mucho para hacer','En la naturaleza, como la cordillera','Donde haya mucha nieve']);
-opcionesQuiz2.push(['Un Citroen c3 morado','Un Peugeot 206 gris','Un Volkswagen Golf rojo','Un Ford Focus blanco']);
+opcionesQuiz2.push(['Un Citroen c3 oscuro','Un Peugeot 206 claro','Un Volkswagen Golf rojo','Un Ford Focus blanco']);
 opcionesQuiz2.push(['Los tíos de Paula','Los padres de Rodri','Los hermanos de Paula','Los primos de Rodri']);
 opcionesQuiz2.push(['En Buenos Aires','En Santa Cruz','En Madryn','En Córdoba']);
 opcionesQuiz2.push(['El Campari','El Fernet Branca','El Gancia','El vino blanco dulce']);
