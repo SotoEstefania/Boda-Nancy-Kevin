@@ -1,28 +1,12 @@
 // // Abecedario
-// const espacioAbecedario=document.querySelector('.letras-abecedario');
-// const abc=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-
-// function generarAbecedario(){
-//     for(let i=0;i<abc.length;i++){
-//         btnLetraG = document.createElement('button');
-//         letraG=document.createTextNode(abc[i]);
-//         btnLetraG.appendChild(letraG);
-//         espacioAbecedario.appendChild(btnLetraG);
-//         btnLetraG.setAttribute("id", "btn-letra");
-//     }
-// }
-
-
-
-
-
-
-
+const espacioAbecedario=document.querySelector('.letras-abecedario');
+const abc=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','Ñ','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
 // Palabra a averiguar
 var palabra = "";
 var guion;
-//Imagenes
+//Imagen que va a cambiar
+const divAhorcado = clase('.div-imagen-ahrcado');
 const imagenAhorcado= clase('.imagen-ahorcado');
 // Num aleatorio
 var random;
@@ -34,28 +18,38 @@ const intentosText=clase('.intentos-text');
 var conteoAciertos=0;
 var conteoVidas=5;
 // Boton de reset
-const nuevoAhorcado = clase(".nuevo-juego");
-// Botones iniciarAhorcado, pista y desistir
+const nuevoAhorcado = clase('.nuevo-juego');
+// Botones pista y volver
 const btnPista = clase('.btn-pista');
-const btnDesistir = clase('.desistir');
-// Abecedario
-const letrasAbecedario = document.querySelectorAll('#btn-letra');
-var botonLetra;
-var letra;
+const btnDesistir = clase('.volver-ahorcado');
 var intentosFin = clase('.intentos-finjuego');
 var spanPista = clase('.span-pista');
-
-// Secciones
-const divAhorcado = clase('.div-imagen-ahrcado');
+// Abecedario
+var letrasAbecedario;
+let botonLetra;
+var botonLetraApretada;
+var letra;
 
 
 const palabras=[['Ramo','Accesorio de flores de la novia'],['Vestido','Prenda, normalmente blanca, que usa la novia'],['Invitados','Si la fiesta es grande, hay muchos'],['Musica','Nos hace bailar'],['Catering','Se encarga de preparar los alimentos'],['Zapatos','Paula esta usando unos blancos y Rodri unos negros de charol'],['Flores','Decoracion natural'],['Globos','Decoracion ovalada que se infla'],['Juez','Persona que casa a los novios'],['Matrimonio','Los novios pasan a ser un...'],['Baliar','Hay música y nos ponemos a...'],['Maquillaje','Delineador, labial, base, sombras...'],['Peinado','Puede ser suelto, con trenzas, con rodete...'],['Velo','Accesorio para la cabeza de la novia'],['Anillos','Objeto simbolo de union y matrimonio'],['Recepcion','Primeros momentos de la fiesta'],['Bebidas','Gaseosas, vinos, cervezas'],['Esmoquin','Vestimenta del novio'],['Cuñados','Los hermanos de Paula son los ... de Rodri'],['Propuesta','Cuando el novio ofrece el anillo a la novia'],['Nazael','Segundo nombre del novio'],['Arroz','Se le lanza a los novios en símbolo de abundancia'],['Moño','Accesorio del novio'],['Souvenir','Al finalizar la fiesta, los invitados se llevan uno'],['Libreta','Los novios firman la ... de familia'],['Familia','Ahora los novios son una...'],['Tragos','Los adultos van a la barra a buscarlos toda la noche'],['Brindis','Tradición de chocar las copas'],['Vals','Primer baile tradicional del matrimonio'],['Iglesia','Hace un rato, los novios se casaron en una ...'],['Fotografo','Persona contratada para sacar fotos'],['Barman','Persona que prepara tragos en la barra'],['Paula','Nombre de la novia']];
 
-btnInicialJuegoAhorcado.onclick= function(){iniciarAhorcado();sectionInicial.style.display='none'; sectionJuegoAhorcado.style.display='flex';}
-nuevoAhorcado.onclick=iniciarAhorcado;
+btnInicialJuegoAhorcado.onclick= function(){iniciarAhorcado(); sectionInicial.style.display='none'; sectionJuegoAhorcado.style.display='flex';}
+nuevoAhorcado.onclick=function(){espacioAbecedario.innerHTML='',iniciarAhorcado()};
+
+
+function generarAbecedario(){
+    for(let i=0;i<abc.length;i++){
+        botonLetra=document.createElement('button');
+        botonLetra.setAttribute("id", "btn-letra");
+        botonLetra.appendChild( document.createTextNode(abc[i]));
+        espacioAbecedario.appendChild(botonLetra);
+    }
+}
 
 function iniciarAhorcado(){
-    // Para limpiar los guiones de la palabra anterior y reiniciarAhorcado conteos
+    generarAbecedario();
+    parrafoPalabra.classList.remove('palabra-sola');
+    letrasAbecedario = document.querySelectorAll('#btn-letra');
     conteoAciertos = 0;
     conteoVidas = 5;
     parrafoPalabra.innerHTML='';
@@ -65,16 +59,8 @@ function iniciarAhorcado(){
         letrasAbecedario[i].disabled=false;
     }
     
-    
-    
-    // palabras.splice(palabras.indexOf(palabras[random]),1); 
-    
-    
-    
-    
     // Para elegir un numero al azar segun la cantidad de palabras, redondeando hacia abajo para que no haya un numero de mas
-    const cantidadPalabras= palabras.length;
-    const numAzar= Math.floor(Math.random()*cantidadPalabras);
+    const numAzar= Math.floor(Math.random()*palabras.length);
     // La palabra ahora es un string del array, poniendo el indice segun el numero sorteado
     palabra=palabras[numAzar][0].toUpperCase();
     console.log(palabra);
@@ -89,6 +75,9 @@ function iniciarAhorcado(){
         espacioLetra.appendChild(guion);
         parrafoPalabra.appendChild(espacioLetra);
     }
+    for (i=0; i<letrasAbecedario.length; i++){
+        letrasAbecedario[i].onclick=letrasUsadas;
+    }
 }
 //Dar pista y dehabilitar boton pista
 btnPista.onclick=darPista;
@@ -96,15 +85,13 @@ function darPista(){
    spanPista.style.visibility='visible';
    btnPista.disabled=true;
 }
-// Funcion para que al usar una letra llame a la funcion letrasUsadas
-for (i=0; i<letrasAbecedario.length; i++){
-    letrasAbecedario[i].onclick=letrasUsadas;
-}
+
 // Funcion para saber que hacer cuando se toca un boton de letra
 function letrasUsadas(event){
-    botonLetra=event.target;
-    botonLetra.disabled=true;
-    letra=botonLetra.innerHTML.toUpperCase();
+    
+    botonLetraApretada=event.target;
+    botonLetraApretada.disabled=true;
+    letra=botonLetraApretada.innerHTML.toUpperCase();
     let acerto=false;
     for (i=0; i< palabra.length; i++){
         if (letra==palabra[i]){
@@ -124,8 +111,12 @@ function letrasUsadas(event){
         }
     }
     if(conteoVidas==0){
-        parrafoPalabra.innerHTML=palabra;
+        for (i=0; i< palabra.length; i++){
+            const guiones = document.querySelectorAll('#palabra-a-adivinar p');
+            guiones[i].innerHTML=palabra[i];
+        }
         intentosText.textContent=('Fin del juego! La palabra era:');
+        parrafoPalabra.classList.add('palabra-sola');
         gameOver();
     }else if(conteoAciertos==palabra.length){
         intentosText.textContent=('Felicitaciones, ganaste un punto!');
@@ -152,4 +143,5 @@ function desistir(){
     sectionJuegoAhorcado.style.display='none';
     conteoErrores=6;
     pPuntaje.innerHTML=`Puntaje: ${puntaje}`;
+    espacioAbecedario.innerHTML='';
 }

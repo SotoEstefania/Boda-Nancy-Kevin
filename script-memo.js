@@ -1,9 +1,9 @@
 const btnVolverMemo = clase('.volver-memo');
-
+const tablaMemoria= clase('.tabla-memoria');
 const pMovimientos= clase('.movimientos-memo');
-const pAciertos=clase('.aciertos-memo');
+const pAciertos= clase('.aciertos-memo');
 const pTiempo = clase('.tiempo-memo');
-const btnNuevoMemo=clase('.nuevo-memo');
+const btnNuevoMemo= clase('.nuevo-memo');
 
 var imgMostradas=0;
 var imagenesMemo = ['<img src="img/Memo-1.png" width="80%">','<img src="img/Memo-2.png" width="80%">','<img src="img/Memo-3.png" width="80%">','<img src="img/Memo-4.png" width="80%">','<img src="img/Memo-5.png" width="80%">','<img src="img/Memo-6.png" width="80%">','<img src="img/Memo-7.png" width="80%">','<img src="img/Memo-8.png" width="80%">','<img src="img/Memo-9.png" width="70%">','<img src="img/Memo-10.png" width="80%">','<img src="img/Memo-1.png" width="80%">','<img src="img/Memo-2.png" width="80%">','<img src="img/Memo-3.png" width="80%">','<img src="img/Memo-4.png" width="80%">','<img src="img/Memo-5.png" width="80%">','<img src="img/Memo-6.png" width="80%">','<img src="img/Memo-7.png" width="80%">','<img src="img/Memo-8.png" width="80%">','<img src="img/Memo-9.png" width="70%">','<img src="img/Memo-10.png" width="80%">'];
@@ -14,12 +14,25 @@ var segundoResultado;
 var movimientosMemo=0;
 var aciertosMemo=0;
 var tiempoMemo=false;
-var timer=35;
+var timer=40;
 var timerInicial=30;
 var tiempoRegresivo;
-
+var botones=[];
 
 btnInicialJuegoMemoria.onclick= function(){sectionInicial.style.display='none'; sectionMemo.style.display='flex'; nuevoMemo(); imagenesMemo=imagenesMemo.sort(()=>{return Math.random()-0.5});}
+
+
+
+
+
+function generarBotones(){
+    for(let i=0;i<20;i++){
+        botones.push(`
+        <div class="div-btn-memo"><button class="btn-memo" id="${i}" onclick="mostrarImg(${i})"><img src="img/back-memo.png" width="80%" loading="lazy"></button></div class="div-btn-memo">
+        `);
+    }
+    tablaMemoria.innerHTML = botones.join(" ")
+}
 
 function contarTiempo(){
     tiempoRegresivo = setInterval(()=>{
@@ -94,22 +107,27 @@ function mostrarImg(id){
     }
 }
 
-btnNuevoMemo.onclick=nuevoMemo;
+
+btnNuevoMemo.onclick= nuevoMemo;
 function nuevoMemo(){
-    //Reiniciar variables, timer, aciertos movimientos, vovler a sortear numeros, desbloquear tarjetas, function mostrarimg
+    for(let i=0;i<20;i++){
+        botones.pop(`
+        <div class="div-btn-memo"><button class="btn-memo" id="${i}" onclick="mostrarImg(${i})"><img src="img/back-memo.png" width="80%" loading="lazy"></button></div class="div-btn-memo">
+        `);
+    }
+    generarBotones();
     imagenesMemo=imagenesMemo.sort(()=>{return Math.random()-0.5});
     console.log(imagenesMemo);
     imgMostradas=0;
     movimientosMemo=0;
     aciertosMemo=0;
     tiempoMemo=false;
-    timer=35;
+    timer=40;
     pMovimientos.innerHTML = `Movimientos: ${movimientosMemo}`;
     pTiempo.innerHTML=`Tiempo: ${timer} segundos`;
     pAciertos.innerHTML='Aciertos: 0';
     btnNuevoMemo.style.visibility='hidden'
     desbloquearTarjetas();
-
 }
 
 btnVolverMemo.onclick= volverMemo;

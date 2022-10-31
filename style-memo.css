@@ -1,9 +1,7 @@
 .section-juego-memoria{
-    /* display: flex; */
-    flex-direction: column;
     display: none;
     margin: auto;
-    height: 100%;
+    height: 90vh;
 }
 .secciones-memoria{
     display: flex;
@@ -12,10 +10,6 @@
     height: 100%;
 }
 
-.section1-memoria{
-    display: flex;
-    justify-content: center;
-}
 .tabla-memoria{
     width: 100%;
     display: flex;

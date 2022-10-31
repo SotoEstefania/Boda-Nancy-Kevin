@@ -1,9 +1,7 @@
 .section-quiz-novios{
     display: none;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    height: 90vh;
     font-size: 2rem;
 }
 
