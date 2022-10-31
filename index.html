@@ -13,20 +13,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Quattrocento&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
       rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css " />
-    <link rel="stylesheet" href="style-ahorcado.css" />
-    <link rel="stylesheet" href="style-memo.css">
-    <link rel="stylesheet" href="style-quiz.css">
-    <link rel="stylesheet" href="queries.css " />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style-ahorcado2.css" />
+    <link rel="stylesheet" href="style-memo2.css">
+    <link rel="stylesheet" href="style-quiz 2.css">
+    <link rel="stylesheet" href="queries2.css" />
   </head>
+
   <body>
-    <!-- Pantalla inicial  -->
     <main>
+      <!-- Pantalla inicial -->
       <section class="pantalla-inicial">
         <h1>Bienvenidos a la boda de Paula y Rodri!</h1>
         <div class="seleccion-pareja">
           <div class="div-pareja">
-            <img src="img/pareja2.png" alt="Imagen de una pareja" class="pareja"/>
+            <img src="img/pareja2.png" alt="Imagen de una pareja" class="pareja">
           </div>
           <div class="seleccion-juegos">
             <h3>Cuál juego te gustaría jugar?</h3>
@@ -37,12 +38,12 @@
         </div>
         <div class="puntajes">
           <p class="puntaje-total">Puntaje total: 0</p>
-        <p class="puntaje-aclaracion">Cuidado! Si recargás la pagina, perdés tu puntaje.</p>
+          <p class="puntaje-aclaracion"><i>Cuidado! Si recargás la pagina, perdés tu puntaje.</i></p>
         </div>
         <span class="sobre-estos-juegos"><u>Sobre estos juegos</u> </span>
-
-        
       </section>
+
+      <!-- Seccion sobre -->
       <section class="section-sobre">
         <div class="presentacion-form">
           <p>Hola! Soy Estefi, la hermana de Rodri. 
@@ -51,30 +52,30 @@
             Si te gustó (o no) la idea, o si encontraste errores, y querés dejarme un comentario, escribime 👇🏼 <br> 
             (El formulario te redireccionará a una página de comprobación.)
           </p>
-          <form action="https://formsubmit.co/sotoestefania482@gmail.com" method="POST">
+          <form>
             <div class="inputs">
-              <div class="label-input"><label for="nombre" >Nombre</label>
+              <div class="label-input">
+                <label for="nombre" >Nombre</label>
                 <input type="text" name="nombre" id="nombre" required>
               </div>
               <div class="label-input">
                 <label for="email">Email</label>
-              <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email">
               </div>
             </div>
-            
             <label for="comentarios">Comentarios</label>
             <textarea name="comentarios" id="comentarios" required></textarea>
-            <button type="submit" class="enviar-form">Enviar</button>
+            <button type="submit" class="btn btn2 enviar-form">Enviar</button>
           </form>
         </div>
-        <button class="volver-sobre btn">Volver al inicio</button>
+        <button class="btn volver-sobre">Volver al inicio</button>
       </section>
 
       <!-- Juego ahorcado -->
       <section class="section-juego-ahorcado">
-          <div>
-            <h2 class="h2juegos">No pierdas los objetos de la novia!</h2>
-          </div>
+        <div>
+          <h2 class="h2juegos">No pierdas los objetos de la novia!</h2>
+        </div>
         <div class="ahorcado-img-palabra">
           <div class="div-imagen-ahorcado">
             <img src="img/ahorcado5.svg" alt="Imagen para el juego del ahorcado" class='imagen imagen-ahorcado'>
@@ -91,78 +92,30 @@
           <div class="botones-juego">
             <button class="btn nuevo-juego btn2">Nueva palabra</button>
             <button  class="btn btn-pista btn2">Dame una pista!</button>
-            <button class= "btn desistir btn2">Volver al inicio</button>
+            <button class= "btn volver-ahorcado btn2">Volver al inicio</button>
           </div>
         </div>
         <p>Palabras relacionadas a los casamientos y los novios</p>
         <div class="div-abecedario">
           <div class="letras-abecedario">
-            <!-- CREAR 'FOR' para generar BOTONES y eliminar del html -PENDIENTE -->
-            <button id="btn-letra">A</button>
-            <button id="btn-letra">B</button>
-            <button id="btn-letra">C</button>
-            <button id="btn-letra">D</button>
-            <button id="btn-letra">E</button>
-            <button id="btn-letra">F</button>
-            <button id="btn-letra">G</button>
-            <button id="btn-letra">H</button>
-            <button id="btn-letra">I</button>
-            <button id="btn-letra">J</button>
-            <button id="btn-letra">K</button>
-            <button id="btn-letra">L</button>
-            <button id="btn-letra">M</button>
-            <button id="btn-letra">N</button>
-            <button id="btn-letra">Ñ</button>
-            <button id="btn-letra">O</button>
-            <button id="btn-letra">P</button>
-            <button id="btn-letra">Q</button>
-            <button id="btn-letra">R</button>
-            <button id="btn-letra">S</button>
-            <button id="btn-letra">T</button>
-            <button id="btn-letra">U</button>
-            <button id="btn-letra">V</button>
-            <button id="btn-letra">W</button>
-            <button id="btn-letra">X</button>
-            <button id="btn-letra">Y</button>
-            <button id="btn-letra">Z</button>
+            <!-- En este div se crean los botones de las letras -->
           </div>
         </div>
       </section>
+
       <!-- Juego memoria -->
       <section class="section-juego-memoria">
         <div >
           <h2 class="h2juegos">Encuentra las parejas!</h2>
         </div>
         <div class="secciones-memoria">
-          <div class="section1-memoria">
             <div class="tabla-memoria">
-            <!-- CREAR 'FOR' para generar BOTONES y eliminar del html -PENDIENTE -->
-              <div class="div-btn-memo"><button class="btn-memo" id="0" onclick="mostrarImg(0)"><img src="img/back-memo.png" width="80%" id="memo-1" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="1" onclick="mostrarImg(1)"><img src="img/back-memo.png" width="80%" id="memo-2" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="2" onclick="mostrarImg(2)"><img src="img/back-memo.png" width="80%" id="memo-3" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="3" onclick="mostrarImg(3)"><img src="img/back-memo.png" width="80%" id="memo-4" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="4" onclick="mostrarImg(4)"><img src="img/back-memo.png" width="80%" id="memo-5" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="5" onclick="mostrarImg(5)"><img src="img/back-memo.png" width="80%" id="memo-6" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="6" onclick="mostrarImg(6)"><img src="img/back-memo.png" width="80%" id="memo-7" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="7" onclick="mostrarImg(7)"><img src="img/back-memo.png" width="80%" id="memo-8" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="8" onclick="mostrarImg(8)"><img src="img/back-memo.png" width="80%" id="memo-9" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="9" onclick="mostrarImg(9)"><img src="img/back-memo.png" width="80%" id="memo-10" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="10" onclick="mostrarImg(10)"><img src="img/back-memo.png" width="80%" id="memo-11" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="11" onclick="mostrarImg(11)"><img src="img/back-memo.png" width="80%" id="memo-12" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="12" onclick="mostrarImg(12)"><img src="img/back-memo.png" width="80%" id="memo-13" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="13" onclick="mostrarImg(13)"><img src="img/back-memo.png" width="80%" id="memo-14" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="14" onclick="mostrarImg(14)"><img src="img/back-memo.png" width="80%" id="memo-15" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="15" onclick="mostrarImg(15)"><img src="img/back-memo.png" width="80%" id="memo-16" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="16" onclick="mostrarImg(16)"><img src="img/back-memo.png" width="80%" id="memo-17" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="17" onclick="mostrarImg(17)"><img src="img/back-memo.png" width="80%" id="memo-18" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="18" onclick="mostrarImg(18)"><img src="img/back-memo.png" width="80%" id="memo-19" loading="lazy"></button></div class="div-btn-memo">
-              <div class="div-btn-memo"><button class="btn-memo" id="19" onclick="mostrarImg(19)"><img src="img/back-memo.png" width="80%" id="memo-20" loading="lazy"></button></div class="div-btn-memo">
+              <!-- En este div se crean los botones de las imagenes -->
             </div>      
-          </div>
           <div class="section2-memoria">
             <p class="aciertos-memo estadisticas">Aciertos: 0</p>
             <p class="movimientos-memo estadisticas">Movimientos: 0</p>
-            <p class="tiempo-memo estadisticas">Tiempo: 30 segundos</p>
+            <p class="tiempo-memo estadisticas">Tiempo: 40 segundos</p>
             <div class="botones-memo">
               <button class="btn btn2 nuevo-memo" >Otra ronda!</button>
               <button class="btn btn2 volver-memo">Volver al inicio</button>
@@ -170,6 +123,8 @@
           </div>
         </div>
       </section>
+
+
       <!-- Quiz novios -->
       <section class="section-quiz-novios">
         <div class="h2-preguntas-respuestas">
@@ -180,42 +135,44 @@
             <div class="seleccion-quizes">
               <button class="btn seleccion-quiz-1">Quiz 1</button>
               <button class="btn seleccion-quiz-2">Quiz 2</button>
-
             </div>
             <div class="quiz-preguntas1">
-              <p class="p-pregunta-quiz">PREGUNTA PREGUNTA</p>
+              <p class="p-pregunta-quiz"></p>
               <div class="opciones-quiz">
-                <button class="opcion-quiz btn" id="opc0" onclick="comprobarRespuesta(0)">0</button>
-                <button class="opcion-quiz btn" id="opc1" onclick="comprobarRespuesta(1)">1</button>
-                <button class="opcion-quiz btn" id="opc2" onclick="comprobarRespuesta(2)">2</button>
-                <button class="opcion-quiz btn" id="opc3" onclick="comprobarRespuesta(3)">3</button>
+                <!-- CODIFICAR FOR PARA CREAR BOTONES AUTOMATICAMENTE - PENDIENTE -->
+                <button class="opcion-quiz btn" id="opc0" onclick="comprobarRespuesta(0)"></button>
+                <button class="opcion-quiz btn" id="opc1" onclick="comprobarRespuesta(1)"></button>
+                <button class="opcion-quiz btn" id="opc2" onclick="comprobarRespuesta(2)"></button>
+                <button class="opcion-quiz btn" id="opc3" onclick="comprobarRespuesta(3)"></button>
               </div>
             </div>
             <div class="quiz-preguntas2">
-              <p class="p-pregunta-quiz-2">PREGUNTA PREGUNTA</p>
+              <p class="p-pregunta-quiz-2"></p>
               <div class="opciones-quiz">
-                <button class="opcion-quiz btn" id="opc0-2" onclick="comprobarRespuesta2(0)">0</button>
-                <button class="opcion-quiz btn" id="opc1-2" onclick="comprobarRespuesta2(1)">1</button>
-                <button class="opcion-quiz btn" id="opc2-2" onclick="comprobarRespuesta2(2)">2</button>
-                <button class="opcion-quiz btn" id="opc3-2" onclick="comprobarRespuesta2(3)">3</button>
+                <button class="opcion-quiz btn" id="opc0-2" onclick="comprobarRespuesta2(0)"></button>
+                <button class="opcion-quiz btn" id="opc1-2" onclick="comprobarRespuesta2(1)"></button>
+                <button class="opcion-quiz btn" id="opc2-2" onclick="comprobarRespuesta2(2)"></button>
+                <button class="opcion-quiz btn" id="opc3-2" onclick="comprobarRespuesta2(3)"></button>
               </div>
             </div>
           </div>
         </div>
         <button class="btn btn2 rendirse-quiz">Salir del quiz</button>
       </section>
+      
       <section class="fin-quiz">
         <p class="p-fin-quiz"></p>
         <div class="botones-fin-quiz">
           <button class="btn btn2 nuevo-quiz">Elegir quiz</button>
-        <button class="btn btn2 volver-quiz">Volver al inicio</button>
+          <button class="btn btn2 volver-quiz">Volver al inicio</button>
         </div>
       </section>
+
     </main>
 
-    <script src="script.js"></script>
-    <script src="script-ahorcado.js"></script>
-    <script src="script-memo.js"></script>
-    <script src="script-quiz.js"></script>
+    <script src="script2.js"></script>
+    <script src="script-ahorcado2.js"></script>
+    <script src="script-memo2.js"></script>
+    <script src="script-quiz2.js"></script>
   </body>
 </html>
