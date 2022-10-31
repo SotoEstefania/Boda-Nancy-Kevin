@@ -31,7 +31,7 @@ let listaPreguntas =
 'Dónde se comprometieron?',
 'Quiénes son Juana, Olivia y Ana?',
 'Cómo se llaman las hermanas de Rodri?',
-'Una difícil: Qué piedra tiene el anillo de compromiso de Paula? 💍',
+'Cuántos años tuvieron de noviazgo?',
 'Dónde viven?',
 'Qué lugar NO visitaron?',
 'Qué le encanta preparar a Rodri?'];
@@ -40,13 +40,13 @@ let correctaQuiz = [1,3,2,0,1,2,0,3,1,0];
 
 let opcionesQuiz = [];
 
-opcionesQuiz.push(['En la escuela','En la universidad','En el trabajo','En una fiesta']);
+opcionesQuiz.push(['En la escuela','En la facultad','En el trabajo','En una fiesta']);
 opcionesQuiz.push(['Pau tiene 25 y Ro 26','Ro tiene 28 y Pau 29','Ambos tienen 27','Pau tiene 26 y Ro 29']);
 opcionesQuiz.push(['Un perro: Firulais','Dos gatos: Gaspar y Canela','No tienen mascotas','Un loro y un pez: Río y Nemo']);
 opcionesQuiz.push(['En la cordillera durante sus vacaciones','En la playa en el verano','En su restaurante favorito','En su casa el día de su aniversario']);
 opcionesQuiz.push(['Las primas cercanas de Paula','Las sobrinas de los novios','Las tías favoritas de Rodri','Las hijas de los novios']);
 opcionesQuiz.push(['María y Ángeles','Paloma y Jesica','Alma y Estefanía','Dulce María y Catalina']);
-opcionesQuiz.push(['Una amatista (violeta)','Una esmeralda (verde)','Un rubí (rojo)','Un ámbar (amarillo)']);
+opcionesQuiz.push(['4','2','8','6']);
 opcionesQuiz.push(['En un edificio','En un complejo de departamentos','En un hotel','En una chacra']);
 opcionesQuiz.push(['Florianópolis, Brasil','Santiago, Chile','Misiones, Argentina','Punta del Este, Uruguay']);
 opcionesQuiz.push(['Caipirinha','Margaritas','Daiquiris','Piña colada']);
@@ -119,9 +119,9 @@ function comprobarRespuesta(opcElegida){
 // QUIZ 2
 let listaPreguntas2 = 
 ['Dónde prefiere vacacionar Paula?',
-'Qué auto tienen?',
+'Cuál es la banda favorita del novio?',
 'Quiénes son María y Ángel?',
-'Dónde creció Rodri?',
+'Qué comida les encanta preparar?',
 'Cuál es la bebida alcohólica favorita de Paula?',
 'Una difícil: Qué ascendencia tiene la familia materna de Rodri? 👀',
 'A qué taller de manualidades iba Paula?',
@@ -132,9 +132,9 @@ let listaPreguntas2 =
 let opcionesQuiz2 = [];
 
 opcionesQuiz2.push(['En las playas más solitarias','En una ciudad con mucho para hacer','En la naturaleza, como la cordillera','Donde haya mucha nieve']);
-opcionesQuiz2.push(['Un Citroen c3 oscuro','Un Peugeot 206 claro','Un Volkswagen Golf rojo','Un Ford Focus blanco']);
+opcionesQuiz2.push(['Pink Floyd','Rolling Stones','Led Zeppelin','The Beatles']);
 opcionesQuiz2.push(['Los tíos de Rodri','Los suegros de Paula','Los primos de Rodri','Los hermanos de Paula']);
-opcionesQuiz2.push(['En Buenos Aires','En Santa Cruz','En Madryn','En Córdoba']);
+opcionesQuiz2.push(['Asado','Tacos','Pizza','Sushi']);
 opcionesQuiz2.push(['El Campari','El Fernet Branca','El Gancia','El vino blanco dulce']);
 opcionesQuiz2.push(['Portuguesa','Española','Italiana','Mexicana']);
 opcionesQuiz2.push(['Collages','Cerámica','Pintura sobre madera','Carpintería']);

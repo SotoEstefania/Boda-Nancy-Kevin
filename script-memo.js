@@ -16,7 +16,7 @@ var movimientosMemo=0;
 var aciertosMemo=0;
 var tiempoMemo=false;
 var timer=40;
-var timerInicial=30;
+var timerInicial=40;
 var tiempoRegresivo;
 var botones=[];
 

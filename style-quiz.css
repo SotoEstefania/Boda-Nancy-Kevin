@@ -1,8 +1,8 @@
 .section-quiz-novios{
     display: none;
     justify-content: space-between;
-    height: 100%;
     font-size: 2rem;
+    height: 90vh;
 }
 
 .h2-preguntas-respuestas{
