@@ -8,6 +8,9 @@ const pFinQuiz= clase('.p-fin-quiz');
 const seleccionQuizes= clase('.seleccion-quizes');
 const btnSeleccionQuiz1= clase('.seleccion-quiz-1');
 const btnSeleccionQuiz2= clase('.seleccion-quiz-2');
+const quizBotones= clase('.quiz-botones-1');
+const quizBotones2= clase('.quiz-botones-2');
+
 
 var quiz1= clase('.quiz-preguntas1');
 var quiz2= clase('.quiz-preguntas2');
@@ -31,7 +34,7 @@ let listaPreguntas =
 'Una difícil: Qué piedra tiene el anillo de compromiso de Paula? 💍',
 'Dónde viven?',
 'Qué lugar NO visitaron?',
-'De dónde vinieron parientes para la fiesta de hoy?'];
+'Qué le encanta preparar a Rodri?'];
 
 let correctaQuiz = [1,3,2,0,1,2,0,3,1,0];
 
@@ -46,7 +49,7 @@ opcionesQuiz.push(['María y Ángeles','Paloma y Jesica','Alma y Estefanía','Du
 opcionesQuiz.push(['Una amatista (violeta)','Una esmeralda (verde)','Un rubí (rojo)','Un ámbar (amarillo)']);
 opcionesQuiz.push(['En un edificio','En un complejo de departamentos','En un hotel','En una chacra']);
 opcionesQuiz.push(['Florianópolis, Brasil','Santiago, Chile','Misiones, Argentina','Punta del Este, Uruguay']);
-opcionesQuiz.push(['Esquel, San Juan y Córdoba','Río Negro y Formosa','Buenos Aires, Mendoza y Neuquén','Chile, Santa Cruz y Jujuy']);
+opcionesQuiz.push(['Caipirinha','Margaritas','Daiquiris','Piña colada']);
 
 
 let posicionActual = 0;
@@ -113,7 +116,7 @@ function comprobarRespuesta(opcElegida){
     setTimeout(cargarPregunta,1200);
 }
 
-// QUIZ 
+// QUIZ 2
 let listaPreguntas2 = 
 ['Dónde prefiere vacacionar Paula?',
 'Qué auto tienen?',
@@ -121,25 +124,25 @@ let listaPreguntas2 =
 'Dónde creció Rodri?',
 'Cuál es la bebida alcohólica favorita de Paula?',
 'Una difícil: Qué ascendencia tiene la familia materna de Rodri? 👀',
-'Dónde trabaja Ro?',
 'A qué taller de manualidades iba Paula?',
+'Dónde trabaja Ro?',
 'Quién es Ragnar?',
-'Qué le encanta preparar a Rodri?'];
+'De dónde vinieron parientes para la fiesta de hoy?'];
 
 let opcionesQuiz2 = [];
 
 opcionesQuiz2.push(['En las playas más solitarias','En una ciudad con mucho para hacer','En la naturaleza, como la cordillera','Donde haya mucha nieve']);
 opcionesQuiz2.push(['Un Citroen c3 oscuro','Un Peugeot 206 claro','Un Volkswagen Golf rojo','Un Ford Focus blanco']);
-opcionesQuiz2.push(['Los tíos de Paula','Los padres de Rodri','Los hermanos de Paula','Los primos de Rodri']);
+opcionesQuiz2.push(['Los tíos de Rodri','Los suegros de Paula','Los primos de Rodri','Los hermanos de Paula']);
 opcionesQuiz2.push(['En Buenos Aires','En Santa Cruz','En Madryn','En Córdoba']);
 opcionesQuiz2.push(['El Campari','El Fernet Branca','El Gancia','El vino blanco dulce']);
 opcionesQuiz2.push(['Portuguesa','Española','Italiana','Mexicana']);
-opcionesQuiz2.push(['En una firma de abogados','En una tienda de electrónica','En una fábrica de bebidas','En una agencia de transportes']);
 opcionesQuiz2.push(['Collages','Cerámica','Pintura sobre madera','Carpintería']);
+opcionesQuiz2.push(['En una firma de abogados','En una tienda de electrónica','En una fábrica de bebidas','En una agencia de transportes']);
 opcionesQuiz2.push(['Un perro','Un vecino','Un conejo','Una oveja']);
-opcionesQuiz2.push(['Caipirinha','Margaritas','Daiquiris','Piña colada']);
+opcionesQuiz2.push(['Esquel, San Juan y Córdoba','Río Negro y Formosa','Buenos Aires, Mendoza y Neuquén','Chile, Santa Cruz y Jujuy']);
 
-let correctaQuiz2 = [2,0,1,3,0,2,2,1,3,0];
+let correctaQuiz2 = [2,0,1,3,0,2,1,2,3,0];
 
 
 
@@ -193,8 +196,6 @@ function comprobarRespuesta2(opcElegida){
     setTimeout(cargarPregunta2,1200);
 }
 
-
-
 function terminarJuego(){
     sectionFinQuiz.style.display='flex';
     sectionJuegoQuiz.style.display='none';
@@ -204,7 +205,6 @@ function terminarJuego(){
     }else{
         pFinQuiz.innerHTML=`Sólo respondiste ${respuestasCorrectas} preguntas correctamente 👎🏼 <br> Ésta vez no sumás puntos. Intentalo de nuevo! <br> Te recomiendo preguntar a otros invitados, seguro alguno sabe...`
     }
-
 }
 
 function rendirseQuiz(){
