@@ -21,8 +21,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 18vw;
-    height: 18vw;
+    width: 17vw;
+    height: 17vw;
     max-width: 11rem;
     max-height: 11rem;
     color: #2b2b2b;
@@ -53,7 +53,7 @@
     height: 30%;
 }
 .estadisticas{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 0.6rem;
     text-align: center;
 }
