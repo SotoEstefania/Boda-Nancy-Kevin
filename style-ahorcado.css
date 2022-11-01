@@ -1,12 +1,16 @@
 .section-juego-ahorcado{
     display: none;
-    justify-content: space-between;
     height: 90vh;
     margin: auto;
 }
 
 .ahorcado-img-palabra{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.palabras-info{
+    margin: 1.5rem;
 }
 .div-imagen-ahorcado{
     height: 25vh;

@@ -47,10 +47,16 @@
 
     .ahorcado-img-palabra{
         display: flex;
-        flex-direction: row;
-        width: 70%;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .img-palabra-pista{
+        width: 80%;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+
     }
     .div-imagen-ahorcado{
         width: 40%;
