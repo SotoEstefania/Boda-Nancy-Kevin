@@ -125,6 +125,10 @@
         height: 2.5rem;
     }
 
+    .fin-quiz{
+        height: 90vh;
+    }
+
     .section-quiz-novios .btn, .fin-quiz .btn{
         width: 40%;
         height: 3.7rem;
