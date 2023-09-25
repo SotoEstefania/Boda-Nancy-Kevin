@@ -8,8 +8,11 @@
         justify-content: space-between;
     }
     h1{
-        font-size: 3rem;
+        font-size: 3vw;
         display: block;
+    }
+    #nyk{
+        font-size: 4.5vw;
     }
     .pantalla-inicial{
         display: flex;
@@ -181,5 +184,5 @@
 
 }
 @media screen and (orientation:landscape){
-    
+
 }
