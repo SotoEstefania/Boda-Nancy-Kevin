@@ -16,12 +16,12 @@
     justify-content: center;
     align-items: center;
 }
-.quiz-preguntas1, .quiz-preguntas2{
+.quiz-preguntas1, .quiz-preguntas2, .quiz-preguntas3{
     display: none;
     flex-direction: column;
 }
 
-.p-pregunta-quiz, .p-pregunta-quiz-2{
+.p-pregunta-quiz, .p-pregunta-quiz-2, .p-pregunta-quiz-3{
     text-align: center;
     height: 6rem;
     display: flex;

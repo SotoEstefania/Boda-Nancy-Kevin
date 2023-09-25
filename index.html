@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta name="HandheldFriendly" content="true" />
     <meta name="robots" content="index, follow" />
-    <meta name="description" content="Juegos creados para el casamiento de Paula y Rodrigo, el 5 de Noviembre de 2022"/>
+    <meta name="description" content="Juegos creados para el casamiento de Nancy y Kevin, el 11 de Noviembre de 2023"/>
     <link rel="shortcut icon" href="img/FavIcon.ico" />
-    <title>Paula y Rodri</title>
+    <title>Nancy y Kevin</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Quattrocento&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap"
       rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Parisienne&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/white-star-free" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-ahorcado.css" />
     <link rel="stylesheet" href="style-memo.css">
@@ -24,7 +31,8 @@
     <main>
       <!-- Pantalla inicial -->
       <section class="pantalla-inicial">
-        <h1>Bienvenidos a la boda de Paula y Rodri!</h1>
+        <h1><span class="bienvenidos">Bienvenidos a la boda de</span> <br>
+          <span id="nyk">Nancy y Kevin!</span></h1>
         <div class="seleccion-pareja">
           <div class="div-pareja">
             <img src="img/pareja2.png" alt="Imagen de una pareja" class="pareja">
@@ -40,37 +48,9 @@
           <p class="puntaje-total">Puntaje total: 0</p>
           <p class="puntaje-aclaracion"><i>Cuidado! Si recargás la pagina, perdés tu puntaje.</i></p>
         </div>
-        <span class="sobre-estos-juegos"><u>Sobre estos juegos</u> </span>
       </section>
 
-      <!-- Seccion sobre -->
-      <section class="section-sobre">
-        <div class="presentacion-form">
-          <p>Hola! Soy Estefi, la hermana de Rodri. 
-            Estoy estudiando programación web y decidí sorprender a la feliz pareja con un toque tecnológico para su fiesta. 
-            Espero se diviertan un rato con éstos juegos que tardé más de un mes en preparar 😵 Las imágenes pueden demorar un poquito en cargar la primera vez pero después ya quedan pre-cargadas y no deberían tardar.<br>
-            Si te gustó (o no) la idea, o si encontraste errores, y querés dejarme un comentario, escribime 👇🏼 <br> 
-            (El formulario te redireccionará a una página de comprobación.)
-          </p>
-          <form action="https://formsubmit.co/sotoestefania482@gmail.com" method="POST">
-            <div class="inputs">
-              <div class="label-input">
-                <label for="nombre" >Nombre</label>
-                <input type="text" name="nombre" id="nombre" required>
-              </div>
-              <div class="label-input">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-              </div>
-            </div>
-            <label for="comentarios">Comentarios</label>
-            <textarea name="comentarios" id="comentarios" required></textarea>
-            <button type="submit" class="btn btn2 enviar-form">Enviar</button>
-          </form>
-        </div>
-        <button class="btn volver-sobre">Volver al inicio</button>
-      </section>
-
+      
       <!-- Juego ahorcado -->
       <section class="section-juego-ahorcado">
         <div>
@@ -135,8 +115,9 @@
           </div>
           <div class="secciones-quiz">
             <div class="seleccion-quizes">
-              <button class="btn seleccion-quiz-1">Quiz 1</button>
-              <button class="btn seleccion-quiz-2">Quiz 2</button>
+              <button class="btn seleccion-quiz-1">Sobre la novia</button>
+              <button class="btn seleccion-quiz-2">Sobre el novio</button>
+              <button class="btn seleccion-quiz-3">Sobre ambos</button>
             </div>
             <div class="quiz-preguntas1">
               <p class="p-pregunta-quiz"></p>
@@ -154,6 +135,15 @@
                 <button class="opcion-quiz btn" id="opc1-2" onclick="comprobarRespuesta2(1)"></button>
                 <button class="opcion-quiz btn" id="opc2-2" onclick="comprobarRespuesta2(2)"></button>
                 <button class="opcion-quiz btn" id="opc3-2" onclick="comprobarRespuesta2(3)"></button>
+              </div>
+            </div>
+            <div class="quiz-preguntas3">
+              <p class="p-pregunta-quiz-3"></p>
+              <div class="opciones-quiz">
+                <button class="opcion-quiz btn" id="opc0-3" onclick="comprobarRespuesta3(0)"></button>
+                <button class="opcion-quiz btn" id="opc1-3" onclick="comprobarRespuesta3(1)"></button>
+                <button class="opcion-quiz btn" id="opc2-3" onclick="comprobarRespuesta3(2)"></button>
+                <button class="opcion-quiz btn" id="opc3-3" onclick="comprobarRespuesta3(3)"></button>
               </div>
             </div>
           </div>
