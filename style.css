@@ -38,6 +38,7 @@ h1{
     font-size: 5.7vw;
     margin:1rem 0rem;
     font-weight: 300;
+    margin-top: 3rem;
 }
 #nyk{
     font-family: 'White Star Free', 'cursive';
@@ -93,6 +94,7 @@ h3{
     font-family: 'Raleway', 'cursive';
     font-weight: 300;
     font-style: italic;
+    margin-top: 3rem;
 }
 
 .div-pareja{
