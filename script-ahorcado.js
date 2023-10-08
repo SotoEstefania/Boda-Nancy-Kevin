@@ -54,7 +54,7 @@ function iniciarAhorcado(){
     conteoVidas = 5;
     parrafoPalabra.innerHTML='';
     intentosText.textContent= ('Intentos restantes: ' + conteoVidas);
-    imagenAhorcado.src='img/ahorcado5.svg';
+    imagenAhorcado.src='img/ahorcado5.png';
     for(i=0;i<letrasAbecedario.length;i++){
         letrasAbecedario[i].disabled=false;
     }
@@ -103,7 +103,7 @@ function letrasUsadas(event){
     }
     if (acerto==false){
         conteoVidas--;
-        const source=`img/ahorcado${conteoVidas}.svg`;
+        const source=`img/ahorcado${conteoVidas}.png`;
         imagenAhorcado.src=source;
         intentosText.textContent= ('Intentos restantes: ' + conteoVidas);
         if(conteoVidas==2){
@@ -120,7 +120,7 @@ function letrasUsadas(event){
         gameOver();
     }else if(conteoAciertos==palabra.length){
         intentosText.textContent=('Felicitaciones, ganaste un punto!');
-        imagenAhorcado.src='img/ahorcadoFin.svg';
+        imagenAhorcado.src='img/ahorcadoFin.png';
         gameOver();
         puntaje++;
     }
