@@ -51,7 +51,7 @@ opcionesQuiz.push(['Sweet Nan','Sweet Kathy','Sweetberries','Sweet Kate']);
 opcionesQuiz.push(['Española','Chilena','Peruana','Cubana']);
 opcionesQuiz.push(['Sus primas cercanas','Sus hermanas','Sus madrinas','Sus mejores amigas']);
 opcionesQuiz.push(['De pilates','De funcional','De danzas clásicas','De elongación']);
-opcionesQuiz.push(['No Te va gustar','Reik','Morat','Guasones']);
+opcionesQuiz.push(['No Te Va Gustar','Reik','Morat','Guasones']);
 opcionesQuiz.push(['Su vecino favorito','Su ahijado','Su padrino','Su hermano']);
 opcionesQuiz.push(['De GAP','De funcional','De calistenia','De crossfit']);
 opcionesQuiz.push(['En una lanera nacional','En una oficina administrativa','En una editorial','En una pastelería']);

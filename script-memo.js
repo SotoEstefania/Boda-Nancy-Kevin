@@ -7,7 +7,7 @@ const btnNuevoMemo= clase('.nuevo-memo');
 
 
 var imgMostradas=0;
-var imagenesMemo = ['<img src="img/Memo-1.png" width="80%">','<img src="img/Memo-2.png" width="80%">','<img src="img/Memo-3.png" width="80%">','<img src="img/Memo-4.png" width="80%">','<img src="img/Memo-5.png" width="80%">','<img src="img/Memo-6.png" width="80%">','<img src="img/Memo-7.png" width="80%">','<img src="img/Memo-8.png" width="80%">','<img src="img/Memo-9.png" width="70%">','<img src="img/Memo-10.png" width="80%">','<img src="img/Memo-1.png" width="80%">','<img src="img/Memo-2.png" width="80%">','<img src="img/Memo-3.png" width="80%">','<img src="img/Memo-4.png" width="80%">','<img src="img/Memo-5.png" width="80%">','<img src="img/Memo-6.png" width="80%">','<img src="img/Memo-7.png" width="80%">','<img src="img/Memo-8.png" width="80%">','<img src="img/Memo-9.png" width="70%">','<img src="img/Memo-10.png" width="80%">'];
+var imagenesMemo = ['<img async src="img/Memo-1.png" width="80%">','<img async src="img/Memo-2.png" width="80%">','<img async src="img/Memo-3.png" width="80%">','<img async src="img/Memo-4.png" width="80%">','<img async src="img/Memo-5.png" width="80%">','<img async src="img/Memo-6.png" width="80%">','<img async src="img/Memo-7.png" width="80%">','<img async src="img/Memo-8.png" width="80%">','<img async src="img/Memo-9.png" width="70%">','<img async src="img/Memo-10.png" width="80%">','<img async src="img/Memo-1.png" width="80%">','<img async src="img/Memo-2.png" width="80%">','<img async src="img/Memo-3.png" width="80%">','<img async src="img/Memo-4.png" width="80%">','<img async src="img/Memo-5.png" width="80%">','<img async src="img/Memo-6.png" width="80%">','<img async src="img/Memo-7.png" width="80%">','<img async src="img/Memo-8.png" width="80%">','<img async src="img/Memo-9.png" width="70%">','<img async src="img/Memo-10.png" width="80%">'];
 var tarjeta1;
 var tarjeta2;
 var primerResultado;
@@ -29,7 +29,7 @@ btnInicialJuegoMemoria.onclick= function(){sectionInicial.style.display='none'; 
 function generarBotones(){
     for(let i=0;i<20;i++){
         botones.push(`
-        <div class="div-btn-memo"><button class="btn-memo" id="${i}" onclick="mostrarImg(${i})"><img src="img/back-memo.png" width="80%" loading="lazy"></button></div class="div-btn-memo">
+        <div class="div-btn-memo"><button class="btn-memo" id="${i}" onclick="mostrarImg(${i})"><img async src="img/back-memo.png" width="80%" loading="lazy"></button></div class="div-btn-memo">
         `);
     }
     tablaMemoria.innerHTML = botones.join(" ")
@@ -57,7 +57,7 @@ function bloquearTarjetas(){
 function desbloquearTarjetas(){
     for(let i=0;i<=19;i++){
         let tarjetaDesbloqueada=document.getElementById(i);
-        tarjetaDesbloqueada.innerHTML = '<img src="img/back-memo.png" width="80%">' ;
+        tarjetaDesbloqueada.innerHTML = '<img async src="img/back-memo.png" width="80%">' ;
         tarjetaDesbloqueada.disabled=false;
     }
 }
@@ -98,8 +98,8 @@ function mostrarImg(id){
 
         }else{
             setTimeout(()=>{
-                tarjeta1.innerHTML='<img src="img/back-memo.png" width="80%">';
-                tarjeta2.innerHTML='<img src="img/back-memo.png" width="80%">';
+                tarjeta1.innerHTML='<img async src="img/back-memo.png" width="80%">';
+                tarjeta2.innerHTML='<img async src="img/back-memo.png" width="80%">';
                 tarjeta1.disabled=false;
                 tarjeta2.disabled=false;
                 imgMostradas =0;
