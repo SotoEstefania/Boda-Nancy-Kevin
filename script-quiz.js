@@ -132,10 +132,10 @@ let listaPreguntas2 =
 'Quién es Luca?',
 'Cuánto/as hermano/as tiene?',
 'Cuál es su cerveza favorita?',
-'Cuánto mide de alto?',
+'Cuál es su personaje favorito de Marvel?',
 'Cuál es su juego favorito de Play 4?',
-'PREGUNTA',
-'PREGUNTA'];
+'Cuándo viajó por primera vez en avión?',
+'Cuál fue su primer auto?'];
 
 let opcionesQuiz2 = [];
 
@@ -145,10 +145,10 @@ opcionesQuiz2.push(['Attaque 77','Cielo Razzo','Green Day','Coldplay']);
 opcionesQuiz2.push(['Su primo','Su hermano','Su cuñado','Su sobrino']);
 opcionesQuiz2.push(['1','2','3','4']);
 opcionesQuiz2.push(['IPA','Cualquier roja','APA','Stout']);
-opcionesQuiz2.push(['RESPUESTA','RESPUESTA','RESPUESTA','RESPUESTA']);
-opcionesQuiz2.push(['RESPUESTA','RESPUESTA','RESPUESTA','RESPUESTA']);
-opcionesQuiz2.push(['RESPUESTA','RESPUESTA','RESPUESTA','RESPUESTA']);
-opcionesQuiz2.push(['RESPUESTA','RESPUESTA','RESPUESTA','RESPUESTA']);
+opcionesQuiz2.push(['Hulk','Spiderman','Capitán América','Iron Man']);
+opcionesQuiz2.push(['PES','Fifa','Tomb Rider','NBA']);
+opcionesQuiz2.push(['2015','2019','2021','2022']);
+opcionesQuiz2.push(['Chevrolet Corsa','Ford Ka','Citroen C3','Peugeot 405']);
 
 let correctaQuiz2 = [2,1,0,3,2,0,3,1,1,0];
 
@@ -215,7 +215,7 @@ let listaPreguntas3 =
 'Dónde viven?',
 'Cuál serie les encanta?',
 'Qué país visitaron en 2019?',
-'PREGUNTA',
+'Dónde vacacionaron juntos por primera vez?',
 'De qué color era el primer gato que tuvieron juntos?'];
 
 let opcionesQuiz3 = [];
@@ -228,7 +228,7 @@ opcionesQuiz3.push(['6','8','10','12']);
 opcionesQuiz3.push(['En un edificio céntrico','En un hotel','En un duplex ','En una chacra alejada']);
 opcionesQuiz3.push(['Los simpsons','Friends','Stranger Things','Todas las anteriores']);
 opcionesQuiz3.push(['Uruguay','Mexico','Brasil','España']);
-opcionesQuiz3.push(['RESPUESTA','RESPUESTA','RESPUESTA','RESPUESTA']);
+opcionesQuiz3.push(['Córdoba','Las Grutas','El Bolsón','Buenos Aires']);
 opcionesQuiz3.push(['Gris con una manchita blanca','Negro con ojos amarillos','Blanco con una rayita gris','Naranja con blanco y negro']);
 
 let correctaQuiz3 = [1,3,0,2,3,2,3,2,1,0];
