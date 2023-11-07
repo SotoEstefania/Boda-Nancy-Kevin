@@ -145,7 +145,7 @@ opcionesQuiz2.push(['Attaque 77','Cielo Razzo','Green Day','Coldplay']);
 opcionesQuiz2.push(['Su primo','Su hermano','Su cuñado','Su sobrino']);
 opcionesQuiz2.push(['1','2','3','4']);
 opcionesQuiz2.push(['IPA','Cualquier roja','APA','Stout']);
-opcionesQuiz2.push(['Hulk','Spiderman','Capitán América','Iron Man']);
+opcionesQuiz2.push(['Hulk','Iron Man','Capitán América','Spiderman']);
 opcionesQuiz2.push(['PES','Fifa','Tomb Rider','NBA']);
 opcionesQuiz2.push(['2015','2019','2021','2022']);
 opcionesQuiz2.push(['Chevrolet Corsa','Ford Ka','Citroen C3','Peugeot 405']);
